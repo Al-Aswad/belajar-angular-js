@@ -39,5 +39,10 @@ app.controller('myCtrl', ['$scope',
         $scope.likes = function(index) {
             $scope.books[index].likes += 1;
         }
+        $scope.log = function() {
+            console.log($scope.title);
+        }
+
+        $scope.dunia = "Indonesia";
     }
 ]);
