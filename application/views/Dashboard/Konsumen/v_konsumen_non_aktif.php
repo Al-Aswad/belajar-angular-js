@@ -9,8 +9,8 @@
                <div class="nav-tabs-custom">
                     <ul class="nav nav-tabs">
                          <li class="active"><a href="#konsumenNonAktif" data-toggle="tab">Konsumen non aktif</a></li>
-                         <li><a href="#konsumenSemiAktif" data-toggle="tab">Konsumen Semi Aktif</a></li>
-                         <li><a href="#konsumenAktif" data-toggle="tab">Konsumen</a></li>
+                         <!-- <li><a href="#konsumenSemiAktif" data-toggle="tab">Konsumen Semi Aktif</a></li> -->
+                         <li><a href="#konsumenAktif" data-toggle="tab">Konsumen Aktif</a></li>
                     </ul>
                     <div class="tab-content">
                          <div class="active tab-pane" id="konsumenNonAktif">
@@ -97,11 +97,7 @@
                                                             <td>{{ x.status }}</td>
                                                             <td>{{ x.stcall }}</td>
                                                             <td class="text-nowrap text-center">
-                                                                 <!-- List -->
-                                                                 <button type="button" class="btn btn-default" data-toggle="modal" data-target="#modal-default" ng-click="hitKonsumen($index)">
-                                                                      <i class="fa fa-fw fa-list-alt">
-                                                                 </button>
-                                                                 <!-- <button class="btn btn-primary btn-sm" ng-click="hitKonsumen($index)"><i class="fa fa-fw fa-list-alt"></i></button> -->
+                                                                 <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modal-default" ng-click="hitKonsumen($index)"><i class="fa fa-fw fa-list-alt"></i></button>
                                                                  <button class="btn btn-success btn-sm" ng-click="alert($index)"><i class="fa fa-fw fa-whatsapp"></i></button>
                                                             </td>
                                                        </tr>
@@ -244,7 +240,7 @@
                                                             <div class="col-md-12">
                                                                  <div class="box box-primary">
                                                                       <div class="box-header box-primary with-border bg-primary" style="color:#fff">
-                                                                           <h3 class="box-title">Riwayat Komikasi</h3>
+                                                                           <h3 class="box-title">Riwayat Komunikasi</h3>
                                                                            <div class="box-tools pull-right">
                                                                                 <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
                                                                                 </button>
@@ -289,95 +285,58 @@
                                                                       </div>
                                                                  </div>
                                                                  <div class="box-body" style="padding: 0;">
-                                                                      <table class="table table-hover">
-                                                                           <tbody>
-                                                                                <tr>
-                                                                                     <td scope="row"></td>
-                                                                                     <td>cek1</td>
-                                                                                     <td>cek1</td>
-                                                                                     <td>cek1</td>
-                                                                                     <td>cek1</td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                     <td scope="row"></td>
-                                                                                     <td>cek1</td>
-                                                                                     <td>cek1</td>
-                                                                                     <td>cek1</td>
-                                                                                     <td>cek1</td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                     <td scope="row"></td>
-                                                                                     <td>cek1</td>
-                                                                                     <td>cek1</td>
-                                                                                     <td>cek1</td>
-                                                                                     <td>cek1</td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                     <td scope="row"></td>
-                                                                                     <td>cek1</td>
-                                                                                     <td>cek1</td>
-                                                                                     <td>cek1</td>
-                                                                                     <td>cek1</td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                     <td scope="row"></td>
-                                                                                     <td>cek1</td>
-                                                                                     <td>cek1</td>
-                                                                                     <td>cek1</td>
-                                                                                     <td>cek1</td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                     <td scope="row"></td>
-                                                                                     <td>cek1</td>
-                                                                                     <td>cek1</td>
-                                                                                     <td>cek1</td>
-                                                                                     <td>cek1</td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                     <td scope="row"></td>
-                                                                                     <td>cek1</td>
-                                                                                     <td>cek1</td>
-                                                                                     <td>cek1</td>
-                                                                                     <td>cek1</td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                     <td scope="row"></td>
-                                                                                     <td>cek1</td>
-                                                                                     <td>cek1</td>
-                                                                                     <td>cek1</td>
-                                                                                     <td>cek1</td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                     <td scope="row"></td>
-                                                                                     <td>cek1</td>
-                                                                                     <td>cek1</td>
-                                                                                     <td>cek1</td>
-                                                                                     <td>cek1</td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                     <td scope="row"></td>
-                                                                                     <td>cek1</td>
-                                                                                     <td>cek1</td>
-                                                                                     <td>cek1</td>
-                                                                                     <td>cek1</td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                     <td scope="row"></td>
-                                                                                     <td>cek1</td>
-                                                                                     <td>cek1</td>
-                                                                                     <td>cek1</td>
-                                                                                     <td>cek1</td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                     <td scope="row"></td>
-                                                                                     <td>cek1</td>
-                                                                                     <td>cek1</td>
-                                                                                     <td>cek1</td>
-                                                                                     <td>cek1</td>
-                                                                                </tr>
-
-                                                                           </tbody>
-                                                                      </table>
+                                                                      <!-- form Aktivitas -->
+                                                                      <form role="form">
+                                                                           <div class="box-body">
+                                                                                <div class="form-group">
+                                                                                     <label>Paket Penawaran</label>
+                                                                                     <select ng-model="paketSelected" class="form-control" style="border-radius:3px" required ng-change="selectPaket()">
+                                                                                          <option style=" padding-top:10px" value="">- Pilih Paket Service -</option>
+                                                                                          <option style="padding-top:10px" value="{{x.id}}" ng-repeat="x in servicePaket">{{x.name}}</option>
+                                                                                     </select>
+                                                                                </div>
+                                                                                <div class="form-group" ng-if="paketSelected">
+                                                                                     <label>List {{paketSelected}}</label>
+                                                                                     <div class="box">
+                                                                                          <div class="box-body table-responsive no-padding">
+                                                                                               <table class="table table-hover">
+                                                                                                    <tr>
+                                                                                                         <th>ID</th>
+                                                                                                         <th>Nama</th>
+                                                                                                         <th>Quantity</th>
+                                                                                                         <th>Price</th>
+                                                                                                         <th>Total</th>
+                                                                                                    </tr>
+                                                                                                    <tr ng-repeat="x in listservicePaket">
+                                                                                                         <td>#</td>
+                                                                                                         <td>{{x.name}}</td>
+                                                                                                         <td>{{x.qty}}</td>
+                                                                                                         <td>{{x.price}}</td>
+                                                                                                         <td>{{x.qty*x.price }}</td>
+                                                                                                    </tr>
+                                                                                               </table>
+                                                                                          </div>
+                                                                                     </div>
+                                                                                </div>
+                                                                                <div class="form-group">
+                                                                                     <label>No WhatApp Konsumen</label>
+                                                                                     <select class="form-control" style="border-radius:3px" required ng-model="selectedWhatApp">
+                                                                                          <option style="padding-top:10px" value="">- Pilih Nomor WhatApp -</option>
+                                                                                          <option ng-if="whatApp.hp !=''" style="padding-top:10px" ng-model="whatAppHp" value="{{whatApp.hp}}">{{whatApp.hp}}</option>
+                                                                                          <option ng-if="whatApp.tlpn !=''" style="padding-top:10px" ng-model="whatAppTlpn" value="{{whatApp.tlpn}}">{{whatApp.tlpn}}</option>
+                                                                                          <option ng-if="whatApp.tlpn1 !=''" style="padding-top:10px" ng-model="whatAppTlpn1" value="{{whatApp.tlpn1}}">{{whatApp.tlpn1}}</option>
+                                                                                          <option style="padding-top:10px" value="whatAppAdd">lainnya</option>
+                                                                                     </select>
+                                                                                </div>
+                                                                                <div ng-if="selectedWhatApp=='whatAppAdd'" class="form-group">
+                                                                                     <label>No WhatApp Lainnya</label>
+                                                                                     <input ng-model="selectedWhatApp" type="text" class="form-control" placeholder="085 .." required>
+                                                                                </div>
+                                                                           </div>
+                                                                           <div class="box-footer">
+                                                                                <button class="btn btn-primary" style="width:100%"><i class="fa fa-fw fa-whatsapp" ng-click="cek()"></i> Kirim Pesan</button>
+                                                                           </div>
+                                                                      </form>
                                                                  </div>
                                                             </div>
                                                        </div>
@@ -396,24 +355,11 @@
                                                                            <tbody>
                                                                                 <tr>
                                                                                      <td scope="row"></td>
-                                                                                     <td>cek1</td>
-                                                                                     <td>cek1</td>
-                                                                                     <td>cek1</td>
-                                                                                     <td>cek1</td>
+                                                                                     <td>Merekomendasikan Service Berat</td>
                                                                                 </tr>
                                                                                 <tr>
                                                                                      <td scope="row"></td>
-                                                                                     <td>cek1</td>
-                                                                                     <td>cek1</td>
-                                                                                     <td>cek1</td>
-                                                                                     <td>cek1</td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                     <td scope="row"></td>
-                                                                                     <td>cek1</td>
-                                                                                     <td>cek1</td>
-                                                                                     <td>cek1</td>
-                                                                                     <td>cek1</td>
+                                                                                     <td>Merekomendasikan Service Ringan</td>
                                                                                 </tr>
                                                                            </tbody>
                                                                       </table>
@@ -433,8 +379,11 @@
                          </div>
                          <!-- penutup konsumen non aktif -->
 
-                         <!-- /.tab-pane -->
                          <div class="tab-pane" id="konsumenSemiAktif">
+                              <div class="callout callout-info">
+                                   <h4>Konsumen - Konsumen Semi AKtif</h4>
+                                   Halaman berisi informasi konsumen Semi aktif
+                              </div>
                               <div class="box box-success">
                                    <div class="box-header with-border">
                                         <h3 class="box-title">Pilih Tahun Konsumen Semi aktif</h3>
@@ -452,10 +401,16 @@
                                    </form>
                               </div>
                          </div>
+
+
                          <div class="tab-pane" id="konsumenAktif">
+                              <div class="callout callout-info">
+                                   <h4>Konsumen - Konsumen Aktif</h4>
+                                   Halaman berisi informasi konsumen aktif
+                              </div>
                               <div class="box box-success">
                                    <div class="box-header with-border">
-                                        <h3 class="box-title">Pilih Tahun Konsumen Semi aktif</h3>
+                                        <h3 class="box-title">Pilih Tahun Konsumen aktif</h3>
                                    </div>
                                    <form role="form">
                                         <div class="box-body">
