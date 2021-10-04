@@ -1,0 +1,46 @@
+<div class="container-fluid" ng-controller="HomeController">
+
+    <div class="container mt-4 mb-4">
+        <input type="text" class="form-control" placeholder="Cari" ng-model="cari">
+    </div>
+
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Motor</th>
+                <th scope="col">Nama</th>
+                <th scope="col">HP</th>
+                <th scope="col">Tlpn 1</th>
+                <th scope="col">Tlpn 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="py-0 px-0 my-0" ng-repeat="x in data |filter:cari">
+                <!-- <tr ng-repeat="x in data" ng-show="
+             ((x.hp || x.telp || x.telpn1))"> -->
+                <td scope="col">#</td>
+                <td scope="row">{{x.motor}}</td>
+                <td>{{x.nkonsumen}}</td>
+                <td>{{x.hp}}</td>
+                <td>{{x.telp}}</td>
+                <td>{{x.telp1}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <form class="mb-5" ng-submit="add()">
+        <div class="row">
+            <div class="col">
+                <input class="form-control mb-2" type="text" ng-model="addData.motor" placeholder="Motor">
+                <input class="form-control mb-2" type="text" ng-model="addData.nkonsumen" placeholder="Nama">
+                <input class="form-control mb-2" type="text" ng-model="addData.hp" placeholder="hp">
+            </div>
+            <div class="col">
+                <input class="form-control mb-2" type="text" ng-model="addData.telp1" placeholder="telp1">
+                <input class="form-control mb-2" type="text" ng-model="addData.telp2" placeholder="telp2">
+            </div>
+        </div>
+        <button class="btn btn-success" type="submit" value="submit">Add</button>
+    </form>
+</div>
